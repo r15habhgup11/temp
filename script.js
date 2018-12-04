@@ -9,6 +9,7 @@ const http = require('http');
 var session = require('express-session');
 var app=express();
 var bodyParser=require('body-parser');
+var crypto= require('crypto');
 
 app.use(session({secret: 'SE-Project'}));
 
@@ -37,6 +38,8 @@ var connection=mysql.createConnection({
      }
 
  });
+
+
 
  app.set('view engine','ejs');
  app.use(express.static('./public'));

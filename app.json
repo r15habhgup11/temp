@@ -1,0 +1,12 @@
+{
+  "name": "resume builder cum digilocker",
+  "description": "This app does one little thing, and does it well.",
+  "repository": "https://github.com/r15habhgup11/resume-builder-cum-digilocker",
+  "logo": "https://small-sharp-tool.com/logo.svg",
+  "keywords": [
+    "node",
+    "express",
+    "static"
+  ],
+  "image":"heroku/nodejs"
+}

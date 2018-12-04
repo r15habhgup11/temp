@@ -1,15 +1,36 @@
 {
   "name": "clgproject",
   "version": "0.0.1",
+  "description": "build resume",
+  "main": "script.js",
+  "scripts": {
+    "start": "node script.js"
+  },
   "dependencies": {
+    "async": "^2.6.1",
     "body-parser": "*",
+    "crypto": "^1.0.1",
     "ejs": "*",
     "express": "*",
     "express-fileupload": "^1.0.0",
     "express-session": "^1.15.6",
     "formidable": "^1.2.1",
+    "heroku": "^7.18.10",
     "mysql": "*",
     "nodemailer": "^4.7.0",
     "nodemon": "^1.18.6"
-  }
+  },
+  "engines": {
+    "node": "0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/r15habhgup11/resume-builder-cum-digilocker"
+  },
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "RISHABH"
 }
