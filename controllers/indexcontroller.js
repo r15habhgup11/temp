@@ -223,7 +223,11 @@ module.exports=function (app,connection) {
                 //console.log('db error');
             }
             connection.query("SELECT * FROM login WHERE email = ? ", [email], function (err, result, fields) {
-
+              if(result.length==0)
+              {
+                res.render('error');
+               }
+               else{
                 if (err) {
                     console.log('error 1');
                 }
@@ -236,8 +240,7 @@ module.exports=function (app,connection) {
                     console.log(sess);
                     res.render('index', {data: sess});
                 }
-                else {
-                    res.render('error');
+
                 }
             });
 
@@ -264,8 +267,8 @@ module.exports=function (app,connection) {
                    var transporter = nodemailer.createTransport({
                        service: 'gmail',
                        auth: {
-                           user: 'r15habhgup11@gmail.com',
-                           pass: 'mypassword'
+                           user: 'myemail@gmail.com',
+                           pass: 'mypass'
                        }
                    });
 
